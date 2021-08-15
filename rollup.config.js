@@ -8,7 +8,7 @@ import resolve from 'rollup-plugin-node-resolve'
 import { terser } from 'rollup-plugin-terser'
 import replace from 'rollup-plugin-replace' // 变量替换，可以将动态设置的变量提取出来在配置文件中设置
 import serve from 'rollup-plugin-serve'
-
+import myExample from './rollup/rollup-plugin-my-example'
 const { BUILD } = process.env
 // const minified = MINIFY === 'true'
 const production = BUILD === 'production'
@@ -23,6 +23,7 @@ export default {
     intro: 'var global = typeof self !== undefined ? self : this;'
   },
   plugins: [
+    myExample(),
     resolve({
       jsnext: true,
       main: true,
