@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../src/index.js"],"sourcesContent":["import answer from './aa.js';\r\n\r\nexport default function () {\r\n\tconsole.log( 'the answer is ' + answer );\r\n}"],"names":["console","log"],"mappings":"8OAEe,WACdA,QAAQC,IAAK"}
